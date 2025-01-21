@@ -1,0 +1,5 @@
+class GeneralG1 {
+    // Placeholder method in the superclass
+    public int Calculate(int UserInput) {
+        return 0; // Just an example
+    }
