@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Student {
+    public static void main(String[] args) {
+        // Create an instance of Assignment which automatically calls the constructor
+        Assignment assign = new Assignment();
+        
+        // Example usage: User enters scored points
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter scored points: ");
+        int scoredPoints = scan.nextInt();
+
+        // Calculate percentage based on scored points
+        int percentage = assign.Calculate(scoredPoints);
+        System.out.println("The calculated percentage is: " + percentage + "%");
+    }
+}
