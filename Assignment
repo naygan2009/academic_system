@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Assignment extends GeneralG1 {
+    // Declare maxPoints as a class-level variable
+    private int maxPoints; 
+
+    // Constructor to initialize max points for the module
+    public Assignment() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the module max points: ");
+        this.maxPoints = scan.nextInt();
+        scan.nextLine();  // Consume newline left by nextInt
+        System.out.println("Enter Subject: ");
+        String subject = scan.nextLine();
+        // You can store the subject if needed
+    }
+
+    // Overriding Calculate method from the superclass
+    @Override
+    public int Calculate(int UserInput) {
+        // Assuming UserInput is the scored points, calculate the percentage
+        int percentage = (UserInput * 100) / maxPoints;
+        return percentage;
+    }
+
+    
+}
